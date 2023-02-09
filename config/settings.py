@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'django_rest_passwordreset',
+    'client'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+TOKEN = "5989553791:AAFQmZOoXgcW_XRPvuXatjUq5r1X7iSwr6E"
 
 TEMPLATES = [
     {
@@ -127,3 +130,13 @@ REST_FRAMEWORK = {
         'knox.auth.TokenAuthentication',
     ]
 }
+
+SITE_ID = 1
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'chyngyzsubhanov@gmail.com'
+EMAIL_HOST_PASSWORD = 'hmbfrviopzdfunsp'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+ACTIVATE_USERS_EMAIL = True
+EMAIL_USE_SSL = False
