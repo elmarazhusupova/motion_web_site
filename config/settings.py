@@ -35,11 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
     'rest_framework',
-    'knox',
-    'django_rest_passwordreset',
-    'client'
+    'client',
+    'knox'
 ]
 
 MIDDLEWARE = [
@@ -134,7 +132,7 @@ REST_FRAMEWORK = {
 SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'chyngyzsubhanov@gmail.com'
+EMAIL_HOST_USER = 'zhusupovaelmara80@gmail.com'
 EMAIL_HOST_PASSWORD = 'hmbfrviopzdfunsp'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
